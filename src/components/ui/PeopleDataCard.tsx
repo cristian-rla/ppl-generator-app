@@ -52,7 +52,7 @@ const PeopleDataCard: React.FC<PeopleDataCardProps> = ({ pplSpecifications }) =>
   return (
     <Card className="relative mt-10 w-[50%] m-auto bg-white shadow-lg ">
       {/* Top colored bar - Fondo negro extendido */}
-      <div className="absolute top-0 left-0 w-full h-16 bg-gray-300 z-0  " />
+      <div className="absolute top-0 left-0 w-full h-20 bg-gray-400 z-0  " />
 
       {/* Avatar overlaps */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 ">

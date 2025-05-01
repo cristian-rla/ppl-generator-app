@@ -52,22 +52,22 @@ const RandomUserPage: React.FC = () => {
   const selectedPerson = selectedIndex !== null ? pplData[selectedIndex] : undefined;
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center">
-      <header className="w-full py-6 bg-gray-800 text-center text-2xl font-bold">
+    <div className="min-h-screen bg-white text-white flex flex-col items-center">
+      <header className="w-full py-6 bg-gray-700 text-center text-2xl font-bold">
         RANDOM USER GENERATOR
         <p className="text-sm font-light text-xl mt-3">
           A free, <span className="text-blue-400 underline">open-source</span> API for generating random user data.
         </p>
         <button
           onClick={getNewPerson}
-          className="px-6 py-3 mt-4 rounded-lg bg-blue-500 hover:bg-blue-400 transition-all active:bg-blue-600"
+          className="px-6 py-3 mt-4 rounded-lg bg-gray-300 hover:bg-blue-400 transition-all active:bg-blue-600 text-gray-500"
         >
           Generate</button>
       </header>
 
       <div className="w-full flex mt-4">
         {/* Lista de Usuarios a la izquierda */}
-        <aside className="w-1/4 bg-white shadow-lg overflow-y-auto h-[80vh]">
+        <aside className="w-1/4 bg-gray-200 shadow-lg overflow-y-auto h-[80vh]">
           <ul className="divide-y text-black">
             {pplData.map((person, idx) => (
               <li key={idx}>
